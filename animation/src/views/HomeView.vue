@@ -12,9 +12,10 @@ import { ref } from "vue";
     </div>
     <button @click="showGreet = !showGreet">Toggle</button> -->
     <div class="container">
-      <input type="text" />
+      <input type="text" placeholder="Add person to invite" />
       <ul>
         <li>Selena</li>
+        <li>Kevin</li>
       </ul>
     </div>
   </main>
@@ -64,5 +65,23 @@ button {
   padding: 10px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
+}
+
+ul {
+  display: inline;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  cursor: pointer;
 }
 </style>
